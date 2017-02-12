@@ -1,7 +1,9 @@
 <mvc:View
     controllerName="sap.ui.fiori.controller.App"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml">
     <App>
     	<pages>
     		<Page title="Nova página">
@@ -9,6 +11,19 @@
     				<Panel
     					headerText="{i18n>showHello}"
     					class="sapUiResponsiveMargin">
+    					<GenericTile 
+    						class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+    						header="{/person/firstName} {/person/lastName}"
+							subheader="Department" 
+							press="press">
+							<tileContent>
+								<TileContent>
+									<content>
+										<ImageContent src="{/person/img}"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
 					</Panel>
     			</content>
     		</Page>

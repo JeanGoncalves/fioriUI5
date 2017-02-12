@@ -3,7 +3,8 @@
 		"firstName": "Jean",
 		"lastName": "Gonçalves",
 		"nameComplete": "Jean Franco Pizarro Gonçalves",
-		"birthday": "1989-10-25"
+		"birthday": "1989-10-25",
+		"img": "https://media.licdn.com/media/AAEAAQAAAAAAAAe2AAAAJDFjZmY3Mjc0LWM0YjQtNGM0MC1iZTVjLTI3MzE4MmY2NTYzYg.jpg"
 	},
 	"experience": {
 		"job": "description 1"
