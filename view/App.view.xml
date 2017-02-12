@@ -2,7 +2,16 @@
     controllerName="sap.ui.fiori.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <Button
-        text="Say Hello"
-        press="onShowHello" />
+    <App>
+    	<pages>
+    		<Page title="Nova página">
+    			<content>
+    				<Panel
+    					headerText="{i18n>showHello}"
+    					class="sapUiResponsiveMargin">
+					</Panel>
+    			</content>
+    		</Page>
+    	</pages>
+    </App>
 </mvc:View>
