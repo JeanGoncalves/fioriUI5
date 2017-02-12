@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Fiori UI5 Application</title>
-</head>
-<body>
+	<head>
+		<title>My Fiori UI5 Application</title>
 
-	<div>
-		<h1>
-			This is my page to exibition a fiori UI5 Application
-		</h1>
-	</div>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<script 
+			id='sap-ui-bootstrap'
+		    src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js'
+		    data-sap-ui-theme='sap_belize'
+		    data-sap-ui-libs='sap.m'
+		    data-sap-ui-compatVersion='edge'
+		    data-sap-ui-preload='async'
+		    data-sap-ui-resourceroots='{
+			    "sap.ui.fiori": "./"
+			}'>
+		</script>
 
-</body>
+		<script>
+		    sap.ui.getCore().attachInit(function () {
+		        new sap.ui.xmlview({
+		            viewName: "sap.ui.fiori.view.App"
+		        }).placeAt("content");
+		    });
+		</script>
+	</head>
+
+	<body class='sapUiBody'>
+	    <div id='content'></div>
+	</body>
 </html>
